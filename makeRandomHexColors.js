@@ -16,12 +16,12 @@ Three example functions that display different
 random hexcolor to background and display the hexvalue.
 */
 function newBGcolor(){
-	var hexValues = "0123456789ABCDEF";
+	var hexValues = "0123456789abcdef";
     document.body.style.backgroundColor = makeColorHex(hexValues);
 	document.getElementById("displayHexValue").innerHTML = makeColorHex(hexValues);
 }
 function newBGcolorLight(){
-	var LIGHThexValues = "89ABCDEF"; //var with Hex that display only bright colors
+	var LIGHThexValues = "89abcdef"; //var with Hex that display only bright colors
     document.body.style.backgroundColor = makeColorHex(LIGHThexValues);
 	document.getElementById("displayHexValue").innerHTML = makeColorHex(LIGHThexValues);
 }
