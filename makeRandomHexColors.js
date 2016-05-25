@@ -1,7 +1,7 @@
 /*
 The code create a hex with "#" and 6 random hex-numbers.
-The function takes a String of hexadecimal ("0123456789ABCDEF") 
-as parameter. 
+The function takes a String of hexadecimal ("0123456789ABCDEF")
+as parameter.
 */
 
 function makeColorHex(hexValues){
@@ -13,11 +13,11 @@ function makeColorHex(hexValues){
 }
 
 function rgbToHex(rgb) {
-	var numb = rgb.split(","); 
+	var numb = rgb.split(",");
 	var r = parseInt(numb[0]);
 	var g = parseInt(numb[1]);
 	var b = parseInt(numb[2]);
-	
+
     return "#" + ((r << 16) + (g << 8) + b).toString(16);
 }
 function hexToRgb(hex) {
@@ -36,9 +36,11 @@ var hexValues = "0123456789abcdef";
 var hexValuesLight = "89abcdef"; //var with Hex that display only bright colors
 var hexValuesDark = "01234567"; //var with Hex that display only dark colors
 function setBG(hex){
-	var rgb = hexToRgb(makeColorHex(hex));
-    document.body.style.backgroundColor = "rgb("+rgb+")";
-	document.getElementById("displayHexValue").innerHTML = rgbToHex(rgb);
+	  var rgb = hexToRgb(makeColorHex(hex));
+    var rgbString = "rgb("+rgb+")";
+    document.body.style.backgroundColor = rgbString;
+	  document.getElementById("displayHexValue").innerHTML = rgbToHex(rgb);
+    document.getElementById('displayRGBValue').innerHTML = rgbString;
 }
 function setBGcolor(){
 	setBG(hexValues);
