@@ -1,26 +1,75 @@
 body {
 	background-color:#C0FFEE;
 }
-p{
-	color: #000000;
-	font-size: 20px;
+h1,h2,h3,h4,h5{
+	color: #aaa;
+	font-size: 14px;
 	padding: 10px;
 	margin: auto;
+	font-family: 'Arimo', sans-serif;
+
+}
+p{
+	color: #999;
+	font-size: 12px;
+	padding: 10px;
+	margin: auto;
+	font-family: 'Arimo', sans-serif;
+
 }
 a{
+	font-size: 14px;
+	color: #555;
 	padding-left: 10px;
+	
 }
 button{
-	color: #ffffff;
-	background-color: #000000;
-	font-size: 15px;
-	border: none;
+	color: #999;
+	background-color: #fff;
+	font-size: 13px;
+	border: 2px solid #eee;
+	outline:none;
 	padding: 10px;
-	margin: 5px;
+	margin:10px;
+	border-radius: 25px;
+}
+button:hover{
+	background-color: #eee;
+	
+}
+.buttonContainer{
+	border-top: 3px dashed #eee;
+	width: 100%;
+	display: inline-block;
+outline:none;
+}
+#btn2{
+    float:right;
+}
+#btn3{
+    float:right;
 }
 .container{
 	margin: auto;
 	background-color: #ffffff;
-	padding: 10px;
 	width: 300px;
+}
+.subColorContainer{
+	margin: auto;
+	margin-top: 10px;
+	background-color: #ffffff;
+	width: 300px;
+}
+.contrastColorContainer{
+	margin: auto;
+}
+#ccColor{
+	background-color: #3f0011;
+	height:  100px;
+	width: 100%;
+}
+#strongColor, #strongColor2, #ccColor2{
+	background-color: #fff;
+	height:  100px;
+	width: 100%;
 }

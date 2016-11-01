@@ -1,20 +1,58 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
-	<meta name="description" content="Random Hex Color" >
+	<meta name="description" content="Random Hex Color">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="makeRandomHexColors.js" type="text/javascript"></script>
 	<link rel="shortcut icon" href="/images/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
 </head>
-<body>
+
+<body onload="setBGcolor()">
 	<div class="container">
+		<h3>Main color:</h3>
 		<p class="text">Hex Value: <a id="displayHexValue">#C0FFEE</a></p>
 		<p class="text">RGB Value: <a id="displayRGBValue">rgb(192,255,238)</a></p>
+		<!-- <p class="text">RGB Value: <a id="displayRGBValue">rgb(192,255,238)</a></p> -->
 		<br/>
-		<button id="Btn1"  type="button" onclick="setBGcolor()">Change BG</button>
-		<button id="Btn2"  type="button" onclick="setBGcolorDark()">DARK</button>
-		<button id="Btn3"  type="button" onclick="setBGcolorLight()">LIGHT</button>
-	</div class="container">
+		<div class="buttonContainer">
+			<button id="btn1" type="button" onclick="setBGcolor()">Random Color</button>
+			<button id="btn2" type="button" onclick="setBGcolorDark()">Dark</button>
+			<button id="btn3" type="button" onclick="setBGcolorLight()">Light</button>
+		</div>
+	</div>
+
+	<div class="subColorContainer">
+		<div class="contrastColorContainer">
+			<div id="ccColor">
+			</div>
+		</div>
+		<p class="text">Hex Value: <a id="contrastColor">"#3f0011"</a></p>
+	</div>
+<div class="subColorContainer">
+		<div class="contrastColorContainer">
+			<div id="ccColor2">
+			</div>
+		</div>
+		<p class="text">Hex Value: <a id="contrastColor2"></a></p>
+	</div>
+		<div class="subColorContainer">
+		<div class="contrastColorContainer">
+			<div id="strongColor">
+			</div>
+		</div>
+		<p class="text">Hex Value: <a id="strColor"></a></p>
+	</div>
+		<div class="subColorContainer">
+		<div class="contrastColorContainer">
+			<div id="strongColor2">
+			</div>
+		</div>
+		<p class="text">Hex Value: <a id="strColor2"></a></p>
+	</div>
+
 </body>
+
 </html>
